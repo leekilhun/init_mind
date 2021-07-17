@@ -15,13 +15,13 @@ aa = (CString)dd;
 ### CString <-> LPWSTR
 unicode 환경에서의 형변환  
 **CString -> LPWSTR**  
-방법 1
-```mfc
+방법 1  
+```
 LPWSTR szAA;
 CString strBB;
 szAA = (LPWSTR)(LPCWSTR)strBB;
 ```
-방법 2
+방법 2  
 ```
 CString aa = _T("123");
 LPWSTR dd = aa.GetBuffer();
