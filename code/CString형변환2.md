@@ -19,3 +19,18 @@ CString b = "하하";
 char a[100];
 strcpy(a,b);
 ```
+
+```c++
+char* ch;
+CString *str;
+
+CString   -->  char*  변환
+1) ch = (LPSTR)(LPCSTR)str;
+2) ch = str.GetBuffer(str,GetLength());
+3) wsprintf( ch, "%s", str);
+
+char*  --> CString  변환
+1) str = (LPCSTR)(LPSTR)ch;
+2) str = ch;
+
+```
