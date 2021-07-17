@@ -16,18 +16,18 @@ aa = (CString)dd;
 unicode 환경에서의 형변환  
 **CString -> LPWSTR**  
 방법 1  
-```
+```c++
 LPWSTR szAA;
 CString strBB;
 szAA = (LPWSTR)(LPCWSTR)strBB;
 ```
 방법 2  
-```
+```c++
 CString aa = _T("123");
 LPWSTR dd = aa.GetBuffer();
 ```
 **LPWSTR -> CString**   
-```
+```c++
 LPWSTR szAA;
 CString strBB;
 
@@ -37,7 +37,7 @@ strBB.Format(_T("%s"),szAA);
 ## CString <-> short*(unicode, multibyte), PLC ASCII
 ### short* -> CString
 multibyte
-```
+```c++
 short* sshort = new short[2];
 sshort[0] = 20826;
 sshort[1] = 67;
@@ -48,7 +48,7 @@ strTest.Format("%s", sshort);
 --> strTest에는 "ZQC"
 ```
 unicode
-```
+```c++
 short sshort[2];
 sshort[0] = 20826;
 sshort[1] = 67;
