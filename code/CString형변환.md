@@ -16,7 +16,7 @@ aa = (CString)dd;
 unicode 환경에서의 형변환  
 **CString -> LPWSTR**  
 방법 1
-```
+```mfc
 LPWSTR szAA;
 CString strBB;
 szAA = (LPWSTR)(LPCWSTR)strBB;
@@ -27,7 +27,7 @@ CString aa = _T("123");
 LPWSTR dd = aa.GetBuffer();
 ```
 **LPWSTR -> CString**   
-```c
+```
 LPWSTR szAA;
 CString strBB;
 
