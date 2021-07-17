@@ -6,3 +6,16 @@ LPSTR은  char* 형이다. char*형을 CString형에다 넣으면 들어가지�
 char a[100] = {"하하"};
 CString b = a;
 ```
+2. 이 경우에는 에러가 납니다.
+```c
+CString b = "하하";
+char a[100];
+a = b;
+```
+문제 해결방법은 여러가지가 있다. 하지만 이렇게 strcpy를 써서 char*형인 a변수로 "하하"를 옮긴 다음에   
+a를 인자로 넘겨주면 에러가 없을 것 입니다.
+```c
+CString b = "하하";
+char a[100];
+strcpy(a,b);
+```
