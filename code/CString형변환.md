@@ -60,7 +60,7 @@ strTest.Format(_T("%s"), sshort);
 ```
 ### CString -> short*
 multibyte
-```
+```c++
 CString strMessage = "ABC";
 short pData[10];
 sprintf_s((char*)pData, 10, "%s", strMessage);
@@ -69,7 +69,7 @@ pData[0]에는 16961
 pData[1]에는 67
 ```
 unicode
-```
+```c++
 CString strMessage = _T("ABC");
 short *pData = new short[10];
 sprintf_s((char*)pData, 10, "%s", strMessage);
