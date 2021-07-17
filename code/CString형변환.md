@@ -16,18 +16,18 @@ aa = (CString)dd;
 unicode 환경에서의 형변환  
 **CString -> LPWSTR**  
 방법 1
-```c++
+```
 LPWSTR szAA;
 CString strBB;
 szAA = (LPWSTR)(LPCWSTR)strBB;
 ```
 방법 2
-```c++
+```
 CString aa = _T("123");
 LPWSTR dd = aa.GetBuffer();
 ```
 **LPWSTR -> CString**   
-```c++
+```c
 LPWSTR szAA;
 CString strBB;
 
