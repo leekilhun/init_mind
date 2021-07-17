@@ -34,3 +34,19 @@ char*  --> CString  변환
 2) str = ch;
 
 ```
+
+#### CString 클래스의 GetBuffer()는 CString을  char*로 바꿔줍니다.
+```c
+CString strTemp = _T("test");
+char *getTemp = NULL;
+
+getTemp = malloc(strTemp.GetLength()+1);
+strcpy(getTemp, strTemp.GetBuffer(strTemp.GetLength());
+printf("결과:%sn", getTemp);
+free(getTemp);
+
+//operator LPCSTR()도 마찬가지
+CString strTemp = _T("test");
+char* getTemp = (LPSTR)(LPCSTR)strData;
+
+```
