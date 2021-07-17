@@ -78,11 +78,38 @@ pData[0]에는 16961
 pData[1]에는 67
 ```
 
-
-### CString -> BSSTR
+### BSTR -> CString 
 multibyte
 ```c++
+CString strTest = "QWERT";
+BSTR szTest = strTest.AllocSysString();
+CString strTest2 = (CString)szTest;
 ```
 unicode
 ```c++
+BSTR szTest;
+CString strTest2 = (CString)szTest;
+```
+
+### CString -> BSTR
+multibyte
+```c++
+CString strTest = "QWERT";
+BSTR szTest = strTest.AllocSysString();
+```
+unicode
+```c++
+CString strTest = _T("QWERT");
+BSTR szTest = strTest.AllocSysString();
+```
+
+### CString -> LPCSTR
+```c++
+//LPCSTR -> CString
+LPCSTR lpszTemp = _T("zzz");
+CString strTemp = lpszTemp;
+
+//CString -> LPCSTR
+CString strTemp = _T("abc");
+LPCSTR lpszTemp = strTemp;
 ```
