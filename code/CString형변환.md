@@ -77,3 +77,12 @@ sprintf_s((char*)pData, 10, "%s", strMessage);
 pData[0]에는 16961
 pData[1]에는 67
 ```
+
+
+### CString -> BSSTR
+multibyte
+```c++
+```
+unicode
+```c++
+```
