@@ -31,24 +31,26 @@ CString   -->  char*  변환
 3) wsprintf( ch, "%s", str);
 
 char*  --> CString  변환
-1) str = (LPCSTR)(LPSTR)ch;
-2) str = ch;
+str.Format(_T("%s"), ch);
 
 ```
 
-#### CString 클래스의 GetBuffer()는 CString을  char*로 바꿔줍니다.
+#### CStringA 
 ```c
-CString strTemp = _T("test");
-char *getTemp = NULL;
+CString -> LPCSTR
+CString str;
+LPCSTR lpcstr = (LPSTR)(LPCTSTR)str;
 
-getTemp = malloc(strTemp.GetLength()+1);
-strcpy(getTemp, strTemp.GetBuffer(strTemp.GetLength());
-printf("결과:%sn", getTemp);
-free(getTemp);
+WinExec( lpcstr, SW_HIDE );
 
-//operator LPCSTR()도 마찬가지
-CString strTemp = _T("test");
-char* getTemp = (LPSTR)(LPCSTR)strData;
+Multi-byte 환경 에서는 위 코드로 문제 없이 사용 가능 
+unicode 환경 에서 Casting 은 가능 하지만 실제 LPCSTR
+인자로 넘겨서 사용 하니 문제가 발생 되네요..
+
+// unicode Casting : CString -> LPCSTR Casting\
+CString str;
+CStringA strA(str);
+LPCSTR ptr = strA;
 
 ```
 
