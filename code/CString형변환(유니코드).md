@@ -4,7 +4,7 @@
 
 **Test Code (유니코드 환경)**
 ```c++
-CString  str;           //형변환할 문자열이 저장된 CString 변수
+	CString  str;           //형변환할 문자열이 저장된 CString 변수
 	wchar_t* wchar_str;     //첫번째 단계(CString to wchar_t*)를 위한 변수
 	char* char_str;			//char* 형의 변수
 	int      char_str_len;  //char* 형 변수의 길이를 위한 변수
