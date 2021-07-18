@@ -26,7 +26,7 @@ CString *str;
 
 CString   -->  char*  변환
 1) ch = (LPSTR)(LPCSTR)str;
-2) ch = str.GetBuffer(str,GetLength());
+2) ch = str.GetBuffer(str.GetLength());
 3) wsprintf( ch, "%s", str);
 
 char*  --> CString  변환
