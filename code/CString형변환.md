@@ -35,7 +35,7 @@ str.Format(_T("%s"), ch);
 
 ```
 
-#### CStringA 
+####  CStringA 
 ```c
 CString -> LPCSTR
 CString str;
