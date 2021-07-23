@@ -80,7 +80,12 @@ int main()
 
  정의 | 내용 | 비고 
 ---|:---|:---
-LPSTR|long point string | 32비트 메모리 포인트  
+LPSTR|long point string type | 32비트 메모리 포인트  
+LPCSTR|long point const string type|
+LPTSTR|long point multibyte string type|멀티바이트
+LPCTSTR|long point const multibyte string type|멀티바이트
+LPWSTR|long point unicode string type| 유니코드
+LPCWSTR|long point const unicode string type| 유니코드
 
 
 
