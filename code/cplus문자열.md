@@ -73,6 +73,15 @@ int main()
   return 0;
 }
 ```
-![결과](https://t1.daumcdn.net/cfile/tistory/99877C365E999C2F2B)  
+![결과](https://t1.daumcdn.net/cfile/tistory/99877C365E999C2F2B)   
+
+### Windows.h의 문자열 타입
+![윈도우문자열](https://t1.daumcdn.net/cfile/tistory/99C921345E999C2F30 "윈도우 문자열 타입")  
+
+ 정의 | 내용 | 비고 
+---|:---|:---
+LPSTR|long point string | 32비트 메모리 포인트  
+
+
 
 
