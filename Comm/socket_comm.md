@@ -2,7 +2,7 @@
 ![캡처](/img/socket_comm1.JPG)
 
 | api | 기능 | 비고 |
-|---|:---:|---:|
+|---|:---|:---|
 | Socket() | 소켓 생성 | 1.stream, 2.DataGram, 3.Raw, Sequenced Packet Service |
 | Bind() | Server, 소켓을 listen port에 대응 |  |
 | Listen() | 접속 준비 상태 | stream socket에서 필요 |
