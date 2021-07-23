@@ -34,3 +34,6 @@ int main()
 }
 ```
 ![leak확인 화면](https://t1.daumcdn.net/cfile/tistory/993207445E999C2F2C "leak확인 화면")
+
+*char* 배열은 릭이 발생되지 않는다
+
