@@ -33,10 +33,10 @@ int main()
   return 0;
 }
 ```
-![leak확인 화면](https://t1.daumcdn.net/cfile/tistory/993207445E999C2F2C "leak확인 화면")
+![leak확인 화면](https://t1.daumcdn.net/cfile/tistory/993207445E999C2F2C "leak확인 화면")  
 
-*char* 배열은 릭이 발생되지 않는다
-![leak](https://t1.daumcdn.net/cfile/tistory/99BA43435E999C2F2F "leak발생되지 않음")
+*char* 배열은 릭이 발생되지 않는다  
+![leak](https://t1.daumcdn.net/cfile/tistory/99BA43435E999C2F2F "leak발생되지 않음")  
 
 
 ### 문자열을 다루는 두가지 방법  
