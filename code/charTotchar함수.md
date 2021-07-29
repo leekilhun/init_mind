@@ -21,6 +21,7 @@ strupr -> wcsupr -> _tcsupr (대문자로 치환)
 strlwr -> wcslwr -> _tcslwr (소문자로 치환)   
 strrev -> wcsrev -> _tcsrev (문자열 역정렬) => "가나다라마" -> "마라다나가"  
 
+### 기본적인 문자열 관련 함수
 | 기능 | 멀티바이트  | 유니코드 | 통합형  (권장)| 
 |---|:---|:---|:---| 
 | 문자열 복사 | strcpy_s | wcscpy_s | _tcscpy_s | 
@@ -32,3 +33,26 @@ strrev -> wcsrev -> _tcsrev (문자열 역정렬) => "가나다라마" -> "마�
 |문자 검색|strchr|wcschr|_tcschr|
 |문자열 검색|strstr|wcsstr|_tcsstr|
 | 문자열 스트림 입력|scanf_s|wscanf_s|_tscanf_s|
+---
+### 문자열을 정수 또는 실수형으로 변환
+| 기능 | 멀티바이트  | 유니코드 | 통합형  (권장)| 
+|---|:---|:---|:---| 
+| 문자열 정수(int) 변환| atoi|_wtoi|_ttoi|
+| 문자열 정수(long) 변환| atol| _wtol| _ttol|
+| 문자열 정수(long long) 변환| atoll| _wtoll| _ttoll|
+| 문자열 실수(double) 변환|atof| _wtof|_ttof|
+
+---
+### 파일 입출력 관련
+| 기능 | 멀티바이트  | 유니코드 | 통합형  (권장)| 
+|---|:---|:---|:---| 
+|파일 열기|fopen_s|_wfopen_s|_tfopen_s|
+|파일 쓰기(스트림 출력)|fprintf_s|fwprintf_s|_ftprintf_s|
+|스트림에서 문자열 읽기|fgets|fgetws|_fgetts|
+
+ 
+
+
+
+
+
