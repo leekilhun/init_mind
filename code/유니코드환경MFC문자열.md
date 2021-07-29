@@ -1,2 +1,5 @@
-### [MFC] Unicode환경에서 char* <-> CString 변환  
+### [MFC] Unicode환경에서 CString to char* 변환    ↔
+
+
+
 
