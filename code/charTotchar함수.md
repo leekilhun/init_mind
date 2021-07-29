@@ -24,4 +24,11 @@ strrev -> wcsrev -> _tcsrev (문자열 역정렬) => "가나다라마" -> "마�
 | 기능 | 멀티바이트  | 유니코드 | 통합형  (권장)| 
 |---|:---|:---|:---| 
 | 문자열 복사 | strcpy_s | wcscpy_s | _tcscpy_s | 
-
+| 문자열 복사 <br> (길이 지정) | strncpy_s | _mbsnbcpy_s | _tcsncpy_s | 
+| 문자열 서식 | sprintf_s <br>sprintf | swprintf_s<br>swprintf | _stprintf_s<br> _stprintf| 
+| 문자열 비교 | strcmp | wcscmp | _tcscmp | 
+| 문자열 길이 |strlen|wcslen| _tcslen|
+| 문자열 추가| strcat_s<br>strcat|wcscat_s<br>wcscat|_tcscat_s<br>_tcscat|
+|문자 검색|strchr|wcschr|_tcschr|
+|문자열 검색|strstr|wcsstr|_tcsstr|
+| 문자열 스트림 입력|scanf_s|wscanf_s|_tscanf_s|
