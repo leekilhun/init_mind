@@ -1,3 +1,10 @@
+## CString 객체에 날짜, 시간 정보를 담는다
+```c++
+CTimeSpan ts(3, 1, 5, 12); // 3 days, 1 hour, 5 min, and 12 sec
+CString s = ts.Format(_T("Total days: %D, hours: %H, mins: %M, secs: %S"));
+ATLASSERT(s == _T("Total days: 3, hours: 01, mins: 05, secs: 12")); 
+```
+
 ## 현재 시간을 가져오려면  
 1 COleDateTime 개체를 만듭니다.  
 2 GetCurrentTime을 호출합니다.  
