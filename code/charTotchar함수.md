@@ -54,46 +54,46 @@ strrev -> wcsrev -> _tcsrev (문자열 역정렬) => "가나다라마" -> "마�
  ## 작업 예
  ### 1. char 문자열 파싱하기  
  ``` C++
- BYTE test_bytes[1024] = {L'1',L'2','\r','\n','[','1','3',']','\r','\n','[','1','4',']','\r','\n','[','1','5',']','\r','\n'};
+BYTE test_bytes[1024] = {L'1',L'2','\r','\n','[','1','3',']','\r','\n','[','1','4',']','\r','\n','[','1','5',']','\r','\n'};
 
-	LPCSTR return_w = "\r\n";
-	BYTE carrige_return = _T('\r');
-	BYTE change_line = _T('\n');
+LPCSTR return_w = "\r\n";
+BYTE carrige_return = _T('\r');
+BYTE change_line = _T('\n');
 
-	BYTE buffer[1024] = {0,};
+BYTE buffer[1024] = {0,};
 
-	int length = strlen((const char*)test_bytes) + 1 ;  
+int length = strlen((const char*)test_bytes) + 1 ;  
 
-	size_t size = 0;	// 합쳐진 문자열의 길이
-	size_t n =1;		// 합칠 문자열 길이
-	int len = 0;
-	int add_cnt = 0;
-	char* dest = NULL;
-	const char* source  ;
-	for (int i = 0; i < length; i++)
+size_t size = 0;	// 합쳐진 문자열의 길이
+size_t n =1;		// 합칠 문자열 길이
+int len = 0;
+int add_cnt = 0;
+char* dest = NULL;
+const char* source  ;
+for (int i = 0; i < length; i++)
+{
+	len = strlen((const char*)buffer) + sizeof(char) * 2;
+	size = sizeof(buffer);
+	assert(size >= (len + n));
+	dest = (char*)buffer;
+	source = (const char*)&test_bytes[i];
+
+	if (test_bytes[i] == carrige_return)
 	{
-		len = strlen((const char*)buffer) + sizeof(char) * 2;
-		size = sizeof(buffer);
-		assert(size >= (len + n));
-		dest = (char*)buffer;
-		source = (const char*)&test_bytes[i];
-
-		if (test_bytes[i] == carrige_return)
-		{
-			strncat_s((char*)buffer, 2 + (add_cnt++), (const char*)&test_bytes[i], n);
-		}
-		else if (test_bytes[i] == change_line)
-		{
-			memset(&buffer[0],0x00, 1024);
-			add_cnt = 0;
-		}
-		else
-		{
-			strncat_s((char*)buffer, len + (add_cnt++), (const char*)&test_bytes[i], n);
-			//strncat_s(dest, len + (add_cnt++), source, n);
-		}		
-		
+		strncat_s((char*)buffer, 2 + (add_cnt++), (const char*)&test_bytes[i], n);
 	}
+	else if (test_bytes[i] == change_line)
+	{
+		memset(&buffer[0],0x00, 1024);
+		add_cnt = 0;
+	}
+	else
+	{
+		strncat_s((char*)buffer, len + (add_cnt++), (const char*)&test_bytes[i], n);
+		//strncat_s(dest, len + (add_cnt++), source, n);
+	}		
+		
+}
  
  ```
 
