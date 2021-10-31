@@ -1,6 +1,12 @@
 ## 타이머/ 틱타이머/ 스케줄 콜백  
 
 ```c
+void f()
+    printf(%s,“이것은 c 코드 입니다”);
+}
+```
+
+```c
 #pragma once
 #include "pch.h"
 
