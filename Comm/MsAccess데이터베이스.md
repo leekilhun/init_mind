@@ -1,4 +1,8 @@
-## 내가 만들 MS Access를 이용 데이터 관리
+## 내가 만들 MS Access를 이용 데이터 관리  
+
+- 일단 MS Access의 ODBC드라이버는 여기서 받으면 된다. 32비트 버전 64비트버전 모두있다.
+https://www.microsoft.com/ko-KR/download/details.aspx?id=13255
+
 
 ```c++
 #pragma once
