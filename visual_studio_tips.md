@@ -10,4 +10,7 @@
 10. 모든 참조 찾기 : Ctrl + Shift + G (개별 설정)  
 11. ![화면분할 상하](img/화면분할_상하.png)  
 12. ![화면분할 상하 결과](img/화면분할_상하_result.png)  
-13. 
+13. function prototype만 보기 :Ctrl + M + O   
+    ![function 구역 좁히기](img/ctrl_m_o.png)  
+14. function 펼쳐 보기  :Ctrl + M + L  
+    ![function 구역 펼치기](img/ctrl_m_l.png)  
