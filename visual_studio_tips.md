@@ -14,3 +14,5 @@
     ![function 구역 좁히기](img/ctrl_m_o.png)  
 14. function 펼쳐 보기  :Ctrl + M + L  
     ![function 구역 펼치기](img/ctrl_m_l.png)  
+15. 줄 블럭으로 켜서 묶기 : Alt + Shift + 방향  
+16.  
