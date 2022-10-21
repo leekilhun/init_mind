@@ -16,4 +16,7 @@
     ![function 구역 펼치기](img/ctrl_m_l.png)  
 15. 코드 블럭으로 켜서 묶어 편집 : Alt + Shift + 방향   
     ![코드 블럭 편집](img/code_block_set.png)  
-16. 
+16. book mark set or release: ctrl + K + K  
+    book mak window  
+    ![코드 블럭 편집](img/bookmark_window.png)  
+17. df
