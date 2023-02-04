@@ -1,17 +1,17 @@
-VSCode에서 편집 효율을 높이는 단축키는 다음과 같습니다:
+VSCode에서 편집 효율을 높이는 단축키는 다음과 같습니다:  
 
-Ctrl + Shift + P: Command Palette 열기
-Ctrl + P: 파일 검색
-Ctrl + Shift + Tab: 최근 열었던 파일 사이 전환
-Ctrl + Tab: 열려있는 탭 사이 전환
-Ctrl + K, Ctrl + S: Keybindings 저장
-Ctrl + /: 주석 토글
-Ctrl + D: 현재 단어 선택 후 다음과 같은 단어 선택
-Ctrl + Shift + L: 여러 줄 선택
-Ctrl + Shift + Enter: 행 추가
-Ctrl + ] or [: Indentation 증감  
-
-
+Ctrl + Shift + P: Command Palette 열기  
+Ctrl + P: 파일 검색  
+Ctrl + Shift + Tab: 최근 열었던 파일 사이 전환  
+Ctrl + Tab: 열려있는 탭 사이 전환  
+Ctrl + K, Ctrl + S: Keybindings 저장  
+Ctrl + /: 주석 토글  
+Ctrl + D: 현재 단어 선택 후 다음과 같은 단어 선택  
+Ctrl + Shift + L: 여러 줄 선택  
+Ctrl + Shift + Enter: 행 추가  
+Ctrl + ] or [: Indentation 증감
+  
+  
 
 
 
